@@ -568,6 +568,33 @@ const events = [
     }
   ]
 },
+{
+  id: "matthew-livelsberger",
+  name: "Matthew Livelsberger",
+  role: "Laboratory Technician at DOE Kansas City National Security Campus",
+  coords: [36.1699, -115.1398],
+  location: "Las Vegas, Nevada, USA",
+  date: "2024-10-30",
+  status: "DOD",
+  summary: "Thirty‑three‑year‑old Department of Energy contractor from the Kansas City National Security Campus who drove a Tesla Cybertruck packed with improvised explosives into the porte‑cochère of the Trump International Hotel in Las Vegas in October 2024, triggering blasts and a fire before dying of a self‑inflicted gunshot wound at the scene after leaving a note alleging trauma and paranoia tied to his classified nuclear‑weapons work.",
+  sources: [
+    {
+      label: "CBS News",
+      url: "https://www.cbsnews.com/news/deaths-disappearances-scientists-staff-government-labs/",
+      type: "primary"
+    },
+    {
+      label: "CBC",
+      url: "https://www.cbc.ca/news/world/cybertruck-explosion-trump-las-vegas-hotel-ptsd-matthew-livelsberger-1.7422859",
+      type: "primary"
+    },
+    {
+      label: "Futurism",
+      url: "https://futurism.com/cybertruck-bomber-drones",
+      type: "secondary"
+    }
+  ]
+},
   {
   id: "frank-werner-maiwald",
   name: "Frank Werner Maiwald",
@@ -809,6 +836,38 @@ const events = [
     {
       label: "Huntsville Business Journal",
       url: "https://huntsvillebusinessjournal.com/news/2023/07/30/solving-the-mystery-of-huntsvilles-brilliant-scientist-disappearing/",
+      type: "secondary"
+    }
+  ]
+},
+{
+  id: "mark-mccandlish",
+  name: "Mark McCandlish",
+  role: "Illustrator & Ufologist",
+  coords: [40.5865, -122.3917],
+  location: "Redding, California, USA",
+  date: "2021-04-13",
+  status: "DOD",
+  summary: "Technical illustrator and ufologist known for detailed testimony about an alleged reverse‑engineered \"Flux Liner\" craft who died at home in Redding on 13 April 2021, with the Shasta County coroner ruling his death a suicide from a self‑inflicted gunshot wound amid ongoing online speculation about its connection to his UFO‑related work.",
+  sources: [
+    {
+      label: "Giza Death Star",
+      url: "https://gizadeathstar.com/2021/05/the-sad-and-mysterious-death-of-ufologist-mark-mccandlish/",
+      type: "secondary"
+    },
+    {
+      label: "Medium",
+      url: "https://medium.com/predict/mark-mccandlish-reverse-engineering-the-flux-liner-arv-efa66c3adaf1",
+      type: "secondary"
+    },
+    {
+      label: "Reddit",
+      url: "https://www.reddit.com/r/aliens/comments/1qw0msb/mark_mccandlish_was_found_dead_on_april_13th_2021/",
+      type: "tertiary"
+    },
+    {
+      label: "Find a Grave",
+      url: "https://www.findagrave.com/memorial/259357253/mark-mccandlish",
       type: "secondary"
     }
   ]
