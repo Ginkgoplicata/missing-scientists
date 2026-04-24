@@ -1039,7 +1039,7 @@ events.forEach(event => {
   }).addTo(map);
 
   marker.bindPopup(`
-    <button onclick="openDetailCardById('${event.id}')" style="border:none;background:none;color:black;text-decoration:none;cursor:pointer;font-weight:bold;font-size:18px;margin-top:-2px;padding-left:0;font-family:'Noto Serif',serif;">${event.name}</button><br>
+    <button onclick="openDetailCardById('${event.id}')" style="border:none;background:none;color:black;text-decoration:none;cursor:pointer;font-weight:bold;font-size:18px;margin-top:-2px;margin-bottom:-5px;padding-left:0;font-family:'Noto Serif',serif;">${event.name}</button><br>
     ${event.role}
   `);
 
