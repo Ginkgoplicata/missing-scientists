@@ -78,12 +78,12 @@ const events = [
 {
   id: "james-tony-moffatt",
   name: "James \"Tony\" Moffatt",
-  role: "Aerospace Defense Engineer & Former Nasa Payload Specialist",
+  role: "Aerospace Defence Engineer & Former Nasa Payload Specialist",
   coords: [34.7304, -86.5861],
   location: "Huntsville, Alabama, USA",
   date: "2026-04-17",
   status: "DOD",
-  summary: "Decorated Army veteran, experimental test‑pilot‑trained aerospace engineer, and former NASA Johnson Space Center payload and flight‑crew support specialist who participated in 14 Space Shuttle ISS‑construction missions before founding an aerospace consulting firm and later serving as a principal research engineer at the University of Alabama in Huntsville; he was killed with his wife and both sons when their Mooney M20 single‑engine plane crashed in South Carolina on 17 April 2026, an incident now being scrutinized as part of a broader cluster of deaths and disappearances among scientists and defense‑adjacent technical staff.",
+  summary: "Decorated Army veteran, experimental test‑pilot‑trained aerospace engineer, and former NASA Johnson Space Center payload and flight‑crew support specialist who participated in 14 Space Shuttle ISS‑construction missions before founding an aerospace consulting firm and later serving as a principal research engineer at the University of Alabama in Huntsville; he was killed with his wife and both sons when their Mooney M20 single‑engine plane crashed in South Carolina on 17 April 2026, an incident now being scrutinized as part of a broader cluster of deaths and disappearances among scientists and defence‑adjacent technical staff.",
   sources: [
     {
       label: "Fox News",
@@ -970,6 +970,11 @@ function createSourcesHtml(sources) {
   }).join('');
 }
 
+function openDetailCardById(id) {
+  const event = events.find(e => e.id === id);
+  if (event) openDetailCard(event);
+}
+
 function openDetailCard(event) {
   const existingCard = document.querySelector('.detail-card');
   if (existingCard) {
@@ -1034,13 +1039,9 @@ events.forEach(event => {
   }).addTo(map);
 
   marker.bindPopup(`
-    <strong>${event.name}</strong><br>
+    <button onclick="openDetailCardById('${event.id}')" style="border:none;background:none;color:black;text-decoration:none;cursor:pointer;font-weight:bold;font-size:18px;margin-top:-2px;padding-left:0;font-family:'Noto Serif',serif;">${event.name}</button><br>
     ${event.role}
   `);
-
-  marker.on('click', () => {
-    openDetailCard(event);
-  });
 
   markers[event.id] = marker;
 });
