@@ -149,6 +149,33 @@ const events = [
     ]
   },
 {
+  id: "melissa-casias",
+  name: "Melissa Casias",
+  role: "Administrative Assistant at Los Alamos National Laboratory",
+  coords: [36.4072, -105.5731],
+  location: "Talpa / Ranchos de Taos, New Mexico",
+  date: "2025-06-26",
+  status: "MIA",
+  summary: "New Mexico woman and Los Alamos National Laboratory employee who disappeared on June 26, 2025 after dropping off her husband at LANL and later being seen on foot near Talpa; family and police have continued searching, while later media coverage linked her case speculatively to a broader cluster of missing or dead U.S. scientists and officials.",
+  sources: [
+    {
+      label: "NBC News Dateline",
+      url: "https://www.nbcnews.com/dateline/missing-in-america/melissa-casias-new-mexico-missing-rcna219956",
+      type: "primary"
+    },
+    {
+      label: "MSN",
+      url: "https://www.msn.com/en-nz/news/other/another-woman-tied-to-us-scientific-secrets-vanishes/ar-AA1Zy6Pj?cvid=69c6e8f0e2cc4afb92caf934285d8e84",
+      type: "secondary"
+    },
+    {
+      label: "New York Post",
+      url: "https://nypost.com/2026/03/27/us-news/another-vanished-official-could-be-tied-to-missing-and-dead-us-scientists-report/",
+      type: "secondary"
+    }
+  ]
+},
+{
   id: "monica-reza",
   name: "Monica Reza",
   role: "Materials Scientist",
