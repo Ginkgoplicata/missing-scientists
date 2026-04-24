@@ -153,7 +153,7 @@ const events = [
   name: "Melissa Casias",
   role: "Administrative Assistant at Los Alamos National Laboratory",
   coords: [36.4072, -105.5731],
-  location: "Talpa / Ranchos de Taos, New Mexico",
+  location: "Talpa / Ranchos de Taos, New Mexico, USA",
   date: "2025-06-26",
   status: "MIA",
   summary: "New Mexico woman and Los Alamos National Laboratory employee who disappeared on June 26, 2025 after dropping off her husband at LANL and later being seen on foot near Talpa; family and police have continued searching, while later media coverage linked her case speculatively to a broader cluster of missing or dead U.S. scientists and officials.",
@@ -376,7 +376,7 @@ const titleEl = document.getElementById('main-title');
 const sidebarList = document.querySelector('.sidebar-list');
 const sortSelect = document.getElementById('sort-select');
 
-titleEl.textContent = `${events.length} Scientists Now Dead/Missing`;
+titleEl.textContent = `${events.length} Scientists* Now Dead/Missing`;
 
 const markers = {};
 
