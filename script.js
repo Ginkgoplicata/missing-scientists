@@ -365,7 +365,7 @@ const events = [
 },
 ];
 
-const map = L.map('map').setView([20, -30], 2);
+const map = L.map('map').setView([34, 5], 2);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
