@@ -29,7 +29,7 @@ const events = [
   location: "California, USA",
   date: "2026-04-18",
   status: "DOD",
-  summary: "Spiritual author and co‑author of \"The Reincarnation of Edgar Cayce?\" about David Wilcock, reported by friends and community members to have died on April 18, 2026, two days before Wilcock’s own reported death.",
+  summary: "Spiritual author and co‑author of \"The Reincarnation of Edgar Cayce?\" about David Wilcock, reported by friends and community members to have died on 18 April 2026, two days before Wilcock’s own reported death.",
   sources: [
     {
       label: "Mashable India",
@@ -110,7 +110,7 @@ const events = [
   location: "Wakefield, Massachusetts, USA",
   date: "2026-03-17",
   status: "DOD",
-  summary: "Forty‑five‑year‑old Novartis researcher and assistant director of chemical biology who disappeared after leaving his Wakefield home late on December 12, 2025 while grieving the recent deaths of both parents, and whose body was recovered three months later from Lake Quannapowitt when the ice thawed; authorities reported no evidence of foul play while the medical examiner worked to confirm identity and cause of death.",
+  summary: "Forty‑five‑year‑old Novartis researcher and assistant director of chemical biology who disappeared after leaving his Wakefield home late on 12 December 2025 while grieving the recent deaths of both parents, and whose body was recovered three months later from Lake Quannapowitt when the ice thawed; authorities reported no evidence of foul play while the medical examiner worked to confirm identity and cause of death.",
   sources: [
     {
       label: "People.com",
@@ -158,18 +158,31 @@ const events = [
 },
 {
   id: "william-mccasland",
-  name: "William McCasland",
+  name: "William Neil McCasland",
   role: "Astronautical Engineer & Retired Air Force Major General",
   coords: [35.0844, -106.6504],
   location: "Albuquerque, New Mexico, USA",
   date: "2026-02-27",
   status: "MIA",
-  summary: "Astronautical engineer and retired U.S. Air Force major general, former head of the Air Force Research Laboratory, who left his Albuquerque home on foot in February 2026 and disappeared, prompting an FBI‑assisted search because of his access to sensitive aerospace programs.",
+  summary: "Astronautical engineer and retired U.S. Air Force major general, former head of the Air Force Research Laboratory, who reportedly (despite no witnesses) left his Albuquerque home on foot in February 2026 and disappeared abruptly between his wife's 11:10am departure and 12:04pm return, prompting an FBI‑assisted search because of his access to sensitive aerospace programs. Although his wallet, a red backpack, and his .38-caliber revolver with leather holster are reported missing, he left behind his phone, prescription glasses and wearable devices.",
   sources: [
     {
       label: "CNN",
       url: "https://edition.cnn.com/2026/03/17/us/fbi-search-william-mccasland-general-missing",
       type: "primary"
+    },
+    {label: "KRQE",
+      url: "https://www.krqe.com/news/albuquerque-metro/bcso-provides-update-on-missing-retired-u-s-air-force-general/",
+      type: "secondary"
+    },
+    {label: "NewsNation",
+      url: "https://www.newsnationnow.com/missing/mccasland-never-seen-leaving-home-ross-coulthart/",
+      type: "secondary"
+    },
+    {
+      label: "The Sentinel",
+      url: "https://thesentinel.network/p/the-blind-spot-rocks-are-falling?r=71h4we",
+      type: "secondary"
     }
   ]
 },
@@ -214,7 +227,12 @@ const events = [
         label: "MIT News",
         url: "https://news.mit.edu/2025/nuno-loureiro-professor-director-plasma-science-and-fusion-center-dies-1216",
         type: "primary"
-      }
+      },
+    {
+      label: "The Sentinel",
+      url: "https://thesentinel.network/p/the-blind-spot-rocks-are-falling?r=71h4we",
+      type: "secondary"
+    }
     ]
   },
   {
@@ -289,12 +307,17 @@ const events = [
   location: "Huber Heights / West Milton / Wright-Patterson Air Force Base, Ohio, USA",
   date: "2025-10-25",
   status: "DOD",
-  summary: "Thirty‑four‑year‑old Air Force Research Laboratory employee at Wright‑Patterson who, according to investigators, killed his wife Jaymee and colleague 1st Lt. Jaime Gustitus at different locations around Dayton between the night of October 24 and the morning of October 25, 2025, before driving to the West Milton municipal building and dying there of a self‑inflicted gunshot wound.",
+  summary: "Thirty‑four‑year‑old Air Force Research Laboratory employee at Wright‑Patterson who, according to investigators, killed his wife Jaymee and colleague 1st Lt. Jaime Gustitus at different locations around Dayton between the night of 24 October and the morning of 25 October 2025, before driving to the West Milton municipal building and dying there of a self‑inflicted gunshot wound.",
   sources: [
     {
       label: "Wright-Patt Official Statement",
       url: "https://www.wpafb.af.mil/News/Article-Display/Article/4326218/incident-involving-wright-patt-personnel-under-investigation/",
       type: "primary"
+    },
+    {
+      label: "The Sentinel",
+      url: "https://thesentinel.network/p/the-blind-spot-rocks-are-falling?r=71h4we",
+      type: "secondary"
     },
     {
       label: "FOX19 / FOX4",
@@ -360,6 +383,11 @@ const events = [
         url: "https://missingpersons.dps.nm.gov/mpweb/mpdetailreport_serv?id=M101688",
         type: "primary"
       },
+    {
+      label: "The Sentinel",
+      url: "https://thesentinel.network/p/the-blind-spot-rocks-are-falling?r=71h4we",
+      type: "secondary"
+    },
       {
         label: "Reddit",
         url: "https://www.reddit.com/r/UFOB/comments/1slu47s/another_individual_connected_to_topsecret_us/",
@@ -392,12 +420,17 @@ const events = [
   location: "Talpa / Ranchos de Taos, New Mexico, USA",
   date: "2025-06-26",
   status: "MIA",
-  summary: "New Mexico woman and Los Alamos National Laboratory employee who disappeared on June 26, 2025 after dropping off her husband at LANL and later being seen on foot near Talpa; family and police have continued searching, while later media coverage linked her case speculatively to a broader cluster of missing or dead U.S. scientists and officials.",
+  summary: "Department of Energy advisory board member and Los Alamos National Laboratory employee who disappeared on 26 June 2025 after dropping off her husband at LANL and later being seen via surveillance footage on foot near Talpa, carrying a backpack and staggering across the road as if she were hurt or intoxicated (despite not being a drinker);  both of her phones were factory reset.",
   sources: [
     {
       label: "NBC News Dateline",
       url: "https://www.nbcnews.com/dateline/missing-in-america/melissa-casias-new-mexico-missing-rcna219956",
       type: "primary"
+    },
+    {
+      label: "The Sentinel",
+      url: "https://thesentinel.network/p/the-blind-spot-rocks-are-falling?r=71h4we",
+      type: "secondary"
     },
     {
       label: "MSN",
@@ -419,11 +452,16 @@ const events = [
   location: "Mount Waterman, California, USA",
   date: "2025-06-22",
   status: "MIA",
-  summary: "Materials scientist and co‑inventor of a high‑performance superalloy for rocket engines who vanished mid‑hike near Mount Waterman in June 2025, only a few metres behind her group, with later reporting raising questions about phone data and the handling of the search.",
+  summary: "Materials scientist and co‑inventor of a high‑performance superalloy (Mondaloy) for rocket engines who vanished mid‑hike near Mount Waterman in June 2025, only a few metres behind her group, with later reporting raising questions about phone data and the handling of the search. Working under the Air Force Research Laboratory Space Vehicles Directorate, she disappeared nine months before William Neil McCasland, the general who oversaw the budget that funded her work, also vanished.",
   sources: [
     {
       label: "Reddit",
       url: "https://www.reddit.com/r/socalhiking/comments/1rvhyir/full_investigation_into_the_monica_reza/",
+      type: "secondary"
+    },
+    {
+      label: "The Sentinel",
+      url: "https://thesentinel.network/p/the-blind-spot-rocks-are-falling?r=71h4we",
       type: "secondary"
     },
     {
@@ -441,12 +479,17 @@ const events = [
   location: "Los Alamos, New Mexico, USA",
   date: "2025-05-08",
   status: "MIA",
-  summary: "Seventy‑eight‑year‑old former Los Alamos National Laboratory employee, reported as a retired waste operations supervisor, who went missing from his home in Los Alamos on May 8, 2025 and was last seen walking away on foot; he remains listed as a missing person with no confirmed recovery.",
+  summary: "Seventy‑eight‑year‑old former Los Alamos National Laboratory employee, reported as a retired waste operations supervisor, who went missing from his home in Los Alamos on 8 May 2025 and was last seen walking away on foot; he remains listed as a missing person with no confirmed recovery. Described as 'healthy, and extremely [mentally] stable,' he left his wallet, keys, and cigarettes on the table and had no cell phone to track.",
   sources: [
     {
       label: "New Mexico Missing Persons",
       url: "https://missingpersons.dps.nm.gov/mpweb/mpdetailreport_serv?id=M99969",
       type: "primary"
+    },
+    {
+      label: "The Sentinel",
+      url: "https://thesentinel.network/p/the-blind-spot-rocks-are-falling?r=71h4we",
+      type: "secondary"
     },
     {
       label: "The Aware Foundation",
@@ -507,12 +550,21 @@ const events = [
   location: "Pasadena, California, USA",
   date: "2024-11-01",
   status: "MIA",
-  summary: "Astronomer at Nasa's Jet Propulsion Laboratory known for mapping the Milky Way and working with the Vera Rubin Observatory was found dead in California in 2024 in circumstances now being reviewed alongside other scientist deaths.",
+  summary: "Astronomer at Nasa's Jet Propulsion Laboratory known for mapping the Milky Way and working with the Vera Rubin Observatory was shot dead on his porch in California in 2024. Studying exoplanets, galactic structure, and dark matter at Caltech, his latest work was with IPAC (Infrared Processing and Analysis Center) on the NEOWISE asteroid-hunting project.",
   sources: [
     {
       label: "CBC News",
       url: "https://www.cbc.ca/news/world/missing-scientists-grillmair-9.7173081",
       type: "primary"
+    },
+    {label: "The Guardian",
+      url: "https://www.theguardian.com/us-news/2026/feb/20/caltech-scientist-carl-grillmair-shooting-death",
+    type: "secondary"
+  },
+    {
+      label: "The Sentinel",
+      url: "https://thesentinel.network/p/the-blind-spot-rocks-are-falling?r=71h4we",
+      type: "secondary"
     }
   ]
 },
@@ -530,6 +582,11 @@ const events = [
       label: "Obituary / Legacy",
       url: "https://www.legacy.com/obituaries/search?query=frank+maiwald",
       type: "primary"
+    },
+    {
+      label: "The Sentinel",
+      url: "https://thesentinel.network/p/the-blind-spot-rocks-are-falling?r=71h4we",
+      type: "secondary"
     },
     {
       label: "Economic Times",
@@ -552,6 +609,11 @@ const events = [
       label: "CNN",
       url: "https://www.cnn.com/2026/04/21/us/deaths-disappearances-scientists-investigation",
       type: "primary"
+    },
+    {
+      label: "The Sentinel",
+      url: "https://thesentinel.network/p/the-blind-spot-rocks-are-falling?r=71h4we",
+      type: "secondary"
     },
     {
       label: "Daily Mail",
@@ -634,7 +696,7 @@ const events = [
   location: "Sunland, California, USA",
   date: "2023-07-30",
   status: "DOD",
-  summary: "Research scientist at Nasa's Jet Propulsion Laboratory who specialized in comets and near‑Earth asteroids, contributing to planetary defence missions such as DART, Dawn, and Deep Space 1; no public cause of death was reported.",
+  summary: "Research scientist at Nasa's Jet Propulsion Laboratory who specialised in comets and near‑Earth asteroids, contributing to planetary defence missions such as DART, Dawn, and Deep Space 1; no public cause of death was reported.",
   sources: [
     {
       label: "Lunar and Planetary Laboratory",
@@ -732,7 +794,7 @@ const events = [
   location: "Huntsville / Madison, Alabama, USA",
   date: "2021-07-27",
   status: "DOD",
-  summary: "Chinese‑American physicist based in the Huntsville area who published on gravitomagnetic effects in rotating superconductors in the 1990s and later worked through her company AC Gravity, reported to have died on July 27, 2021, after years of public speculation about her whereabouts and work.",
+  summary: "Chinese‑American physicist based in the Huntsville area who published on gravitomagnetic effects in rotating superconductors in the 1990s and later worked through her company AC Gravity was struck by a vehicle whilst crossing a street on the UAH campus in 2014, causing permanent brain damage and leading to an Alzheimer’s diagnosis, later passing away on 27 July 2021.",
   sources: [
     {
       label: "Berryhill Funeral Home",
@@ -742,6 +804,11 @@ const events = [
     {
       label: "Find A Grave Memorial",
       url: "https://www.findagrave.com/memorial/230028901/ning-li",
+      type: "secondary"
+    },
+    {
+      label: "Huntsville Business Journal",
+      url: "https://huntsvillebusinessjournal.com/news/2023/07/30/solving-the-mystery-of-huntsvilles-brilliant-scientist-disappearing/",
       type: "secondary"
     }
   ]
