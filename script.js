@@ -76,6 +76,28 @@ const events = [
   ]
 },
 {
+  id: "james-tony-moffatt",
+  name: "James \"Tony\" Moffatt",
+  role: "Aerospace Defense Engineer & Former NASA Payload Specialist",
+  coords: [34.7304, -86.5861],
+  location: "Huntsville, Alabama, USA",
+  date: "2026-04-17",
+  status: "DOD",
+  summary: "Decorated Army veteran, experimental test‑pilot‑trained aerospace engineer, and former NASA Johnson Space Center payload and flight‑crew support specialist who participated in 14 Space Shuttle ISS‑construction missions before founding an aerospace consulting firm and later serving as a principal research engineer at the University of Alabama in Huntsville; he was killed with his wife and both sons when their Mooney M20 single‑engine plane crashed in South Carolina on 17 April 2026, an incident now being scrutinized as part of a broader cluster of deaths and disappearances among scientists and defense‑adjacent technical staff.",
+  sources: [
+    {
+      label: "Fox News",
+      url: "https://www.foxnews.com/us/aerospace-defense-engineer-military-veteran-killed-plane-crash-family",
+      type: "primary"
+    },
+    {
+      label: "Off the Press",
+      url: "https://www.offthepress.com/military-veteran-with-nasa-ties-and-his-family-killed-in-plane-crash-adding-to-mystery/",
+      type: "secondary"
+    }
+  ]
+},
+{
   id: "nick-pope",
   name: "Nick Pope",
   role: "UFO Analyst & Former UK Defence Official",
@@ -797,14 +819,14 @@ const events = [
   summary: "Chemist associated in online discussion with exotic propulsion and energy‑weapon research in Huntsville whose 2022 death was officially ruled a self‑inflicted gunshot.",
   sources: [
     {
-      label: "NewsNation",
-      url: "https://www.newsnationnow.com/missing/amy-eskridge-energy-weapon-attack/",
-      type: "secondary"
-    },
-    {
       label: "Newsweek",
       url: "https://www.newsweek.com/who-is-amy-eskridge-scientist-death-queried-us-expert-mysteries-11843659",
       type: "primary"
+    },
+    {
+      label: "NewsNation",
+      url: "https://www.newsnationnow.com/missing/amy-eskridge-energy-weapon-attack/",
+      type: "secondary"
     },
     {
       label: "Reddit",
@@ -861,14 +883,14 @@ const events = [
       type: "secondary"
     },
     {
-      label: "Reddit",
-      url: "https://www.reddit.com/r/aliens/comments/1qw0msb/mark_mccandlish_was_found_dead_on_april_13th_2021/",
-      type: "tertiary"
-    },
-    {
       label: "Find a Grave",
       url: "https://www.findagrave.com/memorial/259357253/mark-mccandlish",
       type: "secondary"
+    },
+    {
+      label: "Reddit",
+      url: "https://www.reddit.com/r/aliens/comments/1qw0msb/mark_mccandlish_was_found_dead_on_april_13th_2021/",
+      type: "tertiary"
     }
   ]
 },
