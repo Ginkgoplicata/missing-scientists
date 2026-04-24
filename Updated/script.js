@@ -770,6 +770,349 @@ const events = [
 },
 ];
 
+const agencyNodes = [
+  {
+    id: 'usa',
+    label: 'USA',
+    type: 'country',
+    group: 'USA',
+    image: 'images/USA.png',
+    description: 'United States government and affiliated research, defense, and aerospace network.'
+  },
+  {
+    id: 'dow',
+    label: 'Department of War',
+    type: 'agency',
+    group: 'USA',
+    image: 'images/DOW.png',
+    description: 'Parent defense structure in your diagram for military and research branches.'
+  },
+  {
+    id: 'doe',
+    label: 'Department of Energy',
+    type: 'agency',
+    group: 'USA',
+    image: 'images/DOE.png',
+    description: 'US energy and national security institution connected to federal research infrastructure.'
+  },
+  {
+    id: 'nasa',
+    label: 'NASA',
+    type: 'agency',
+    group: 'USA',
+    image: 'images/NASA.png',
+    description: 'US civilian space agency overseeing aerospace and space science programs.'
+  },
+  {
+    id: 'air-force',
+    label: 'Air Force',
+    type: 'agency',
+    group: 'USA',
+    image: 'images/USAir.png',
+    description: 'US Air Force branch connected to research, bases, and defense personnel.'
+  },
+  {
+    id: 'wright-patterson',
+    label: 'Wright Patterson',
+    type: 'agency',
+    group: 'USA',
+    image: 'images/wright-patterson.png',
+    description: 'Air Force-linked installation associated with research and personnel in this network.'
+  },
+  {
+    id: 'afrl',
+    label: 'Air Force Research Lab',
+    type: 'agency',
+    group: 'USA',
+    image: 'images/AFRL.png',
+    description: 'Research arm of the Air Force tied to labs, campuses, and individuals.'
+  },
+  {
+    id: 'kc-nsc',
+    label: 'Kansas City National Security Campus',
+    type: 'agency',
+    group: 'USA',
+    image: 'images/KCNSC.png',
+    description: 'National security campus connected to Air Force research relationships in this map.'
+  },
+  {
+    id: 'jpl-caltech',
+    label: 'JPL (Caltech)',
+    type: 'agency',
+    group: 'USA',
+    image: 'images/JPL.png',
+    description: 'NASA’s Jet Propulsion Laboratory, managed by Caltech, responsible for many US robotic space missions and advanced planetary and Earth-observation instrumentation.'
+  },
+  {
+    id: 'william-mccasland',
+    label: 'William McCasland',
+    type: 'person',
+    group: 'USA',
+    image: 'images/william-mccasland.png',
+    description: 'Former head of the Air Force Research Laboratory and retired major general.'
+  },
+  {
+    id: 'jacob-prichard',
+    label: 'Jacob Prichard',
+    type: 'person',
+    group: 'USA',
+    image: 'images/jacob-prichard.png',
+    description: 'Wright-Patterson-connected individual in the current agency network.'
+  },
+  {
+    id: 'steven-garcia',
+    label: 'Steven Garcia',
+    type: 'person',
+    group: 'USA',
+    image: 'images/steven-garcia.png',
+    description: 'Individual linked to Kansas City National Security Campus within the Air Force research network.'
+  },
+  {
+    id: 'monica-jacinto-reza',
+    label: 'Monica Jacinto Reza',
+    type: 'person',
+    group: 'USA',
+    image: 'images/monica-reza.png',
+    description: 'Individual connected both to Wright-Patterson Air Force activity and to JPL/Caltech contexts in this diagram, indicating cross-institutional ties.'
+  },
+  {
+    id: 'carl-grillmair',
+    label: 'Carl Grillmair',
+    type: 'person',
+    group: 'USA',
+    image: 'images/carl-grillmair.png',
+    description: 'Astronomer at JPL known for work on stellar streams and galactic structure.'
+  },
+  {
+    id: 'michael-david-hicks',
+    label: 'Michael David Hicks',
+    type: 'person',
+    group: 'USA',
+    image: 'images/michael-david-hicks.png',
+    description: 'JPL scientist associated with near-Earth object and planetary observation work.'
+  },
+  {
+    id: 'frank-werner-maiwald',
+    label: 'Frank Werner Maiwald',
+    type: 'person',
+    group: 'USA',
+    image: 'images/frank-werner-maiwald.png',
+    description: 'Principal researcher at JPL linked to advanced Earth-observation and planetary instruments.'
+  }
+];
+
+const agencyLinks = [
+  { source: 'usa', target: 'dow' },
+  { source: 'usa', target: 'doe' },
+  { source: 'usa', target: 'nasa' },
+
+  { source: 'dow', target: 'air-force' },
+
+  { source: 'air-force', target: 'wright-patterson' },
+  { source: 'air-force', target: 'afrl' },
+
+  { source: 'afrl', target: 'kc-nsc' },
+  { source: 'afrl', target: 'william-mccasland' },
+
+  { source: 'kc-nsc', target: 'steven-garcia' },
+
+  { source: 'wright-patterson', target: 'jacob-prichard' },
+  { source: 'wright-patterson', target: 'monica-jacinto-reza' },
+
+  { source: 'nasa', target: 'jpl-caltech' },
+  { source: 'jpl-caltech', target: 'carl-grillmair' },
+  { source: 'jpl-caltech', target: 'michael-david-hicks' },
+  { source: 'jpl-caltech', target: 'frank-werner-maiwald' },
+  { source: 'jpl-caltech', target: 'monica-jacinto-reza' }
+];
+
+const agencyPositions = {
+  usa: { x: 260, y: 1120 },
+
+  nasa: { x: 200, y: 980 },
+  doe: { x: 290, y: 900 },
+  dow: { x: 185, y: 860 },
+
+  'jpl-caltech': { x: 105, y: 840 },
+  'carl-grillmair': { x: 35, y: 720 },
+  'michael-david-hicks': { x: 110, y: 690 },
+  'frank-werner-maiwald': { x: 190, y: 735 },
+
+  'air-force': { x: 120, y: 760 },
+  afrl: { x: 70, y: 630 },
+  'wright-patterson': { x: 165, y: 620 },
+  'kc-nsc': { x: 55, y: 515 },
+
+  'william-mccasland': { x: 20, y: 405 },
+  'jacob-prichard': { x: 220, y: 500 },
+  'steven-garcia': { x: 20, y: 335 },
+  'monica-jacinto-reza': { x: 265, y: 700 },
+
+  russia: { x: 1100, y: 1120 },
+  china: { x: 1880, y: 1120 }
+};
+
+function renderAgencyNodes() {
+  const nodeLayer = document.getElementById('agency-node-layer');
+  const popover = document.getElementById('agency-popover');
+  const viewport = document.getElementById('agency-viewport');
+
+  if (!nodeLayer || !viewport) return;
+
+  nodeLayer.innerHTML = '';
+
+  agencyNodes
+    .filter(node => agencyPositions[node.id])
+    .forEach(node => {
+      const el = document.createElement('div');
+      el.className = 'agency-node';
+      el.style.left = `${agencyPositions[node.id].x}px`;
+      el.style.top = `${agencyPositions[node.id].y}px`;
+      el.dataset.id = node.id;
+      el.dataset.type = node.type || '';
+
+      const img = document.createElement('img');
+      img.src = node.image || 'https://via.placeholder.com/72';
+      img.alt = node.label;
+      el.appendChild(img);
+
+      el.addEventListener('click', (event) => {
+        event.stopPropagation();
+
+        const wasSelected = el.classList.contains('is-selected');
+
+        document
+          .querySelectorAll('.agency-node.is-selected')
+          .forEach(nodeEl => nodeEl.classList.remove('is-selected'));
+
+        if (popover) {
+          popover.classList.add('is-hidden');
+        }
+
+        if (wasSelected) {
+          return;
+        }
+
+        el.classList.add('is-selected');
+
+        const matchedEvent = events.find(item => item.id === node.id);
+
+        if (matchedEvent) {
+          openDetailCard(matchedEvent);
+          return;
+        }
+
+        openAgencyCard(node);
+      });
+
+      nodeLayer.appendChild(el);
+    });
+}
+
+renderAgencyNodes();
+
+const agencyCanvas = document.getElementById('agency-canvas');
+const agencyViewport = document.getElementById('agency-viewport');
+const agencyPopoverClose = document.getElementById('agency-popover-close');
+
+if (agencyViewport) {
+  agencyViewport.addEventListener('click', (event) => {
+    if (event.target.closest('.agency-node') || event.target.closest('.agency-popover')) {
+      return;
+    }
+
+    const popover = document.getElementById('agency-popover');
+    if (popover) {
+      popover.classList.add('is-hidden');
+    }
+
+    document
+      .querySelectorAll('.agency-node.is-selected')
+      .forEach(nodeEl => nodeEl.classList.remove('is-selected'));
+  });
+}
+
+if (agencyPopoverClose) {
+  agencyPopoverClose.addEventListener('click', () => {
+    const popover = document.getElementById('agency-popover');
+    if (popover) {
+      popover.classList.add('is-hidden');
+    }
+
+    document
+      .querySelectorAll('.agency-node.is-selected')
+      .forEach(nodeEl => nodeEl.classList.remove('is-selected'));
+  });
+}
+
+let agencyPanX = -120;
+let agencyPanY = -260;
+let agencyScale = 0.78;
+
+let isDraggingAgency = false;
+let agencyDragStartX = 0;
+let agencyDragStartY = 0;
+let agencyStartPanX = 0;
+let agencyStartPanY = 0;
+
+function applyAgencyTransform() {
+  if (!agencyCanvas) return;
+  agencyCanvas.style.transform = `translate(${agencyPanX}px, ${agencyPanY}px) scale(${agencyScale})`;
+}
+
+if (agencyViewport && agencyCanvas) {
+  applyAgencyTransform();
+
+  agencyViewport.addEventListener('mousedown', (event) => {
+    if (event.target.closest('.agency-node') || event.target.closest('.agency-popover')) {
+      return;
+    }
+
+    isDraggingAgency = true;
+    agencyViewport.classList.add('is-dragging');
+    agencyDragStartX = event.clientX;
+    agencyDragStartY = event.clientY;
+    agencyStartPanX = agencyPanX;
+    agencyStartPanY = agencyPanY;
+  });
+
+  window.addEventListener('mousemove', (event) => {
+    if (!isDraggingAgency) return;
+
+    const dx = event.clientX - agencyDragStartX;
+    const dy = event.clientY - agencyDragStartY;
+
+    agencyPanX = agencyStartPanX + dx;
+    agencyPanY = agencyStartPanY + dy;
+    applyAgencyTransform();
+  });
+
+  window.addEventListener('mouseup', () => {
+    isDraggingAgency = false;
+    agencyViewport.classList.remove('is-dragging');
+  });
+
+  agencyViewport.addEventListener('wheel', (event) => {
+    event.preventDefault();
+
+    const rect = agencyViewport.getBoundingClientRect();
+    const mouseX = event.clientX - rect.left;
+    const mouseY = event.clientY - rect.top;
+
+    const zoomFactor = event.deltaY < 0 ? 1.1 : 0.9;
+    const nextScale = Math.max(0.45, Math.min(1.8, agencyScale * zoomFactor));
+
+    const worldX = (mouseX - agencyPanX) / agencyScale;
+    const worldY = (mouseY - agencyPanY) / agencyScale;
+
+    agencyScale = nextScale;
+    agencyPanX = mouseX - worldX * agencyScale;
+    agencyPanY = mouseY - worldY * agencyScale;
+
+    applyAgencyTransform();
+  }, { passive: false });
+}
+
 const map = L.map('map').setView([34, 5], 2);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -780,6 +1123,33 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const titleEl = document.getElementById('main-title');
 const sidebarList = document.querySelector('.sidebar-list');
 const sortSelect = document.getElementById('sort-select');
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabPanels = document.querySelectorAll('.tab-panel');
+
+let activeTab = 'map';
+
+tabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const target = button.dataset.tab;
+    if (!target || target === activeTab) return;
+
+    activeTab = target;
+
+    tabButtons.forEach(btn => {
+      btn.classList.toggle('active', btn === button);
+    });
+
+    tabPanels.forEach(panel => {
+      panel.classList.toggle('active', panel.id === `tab-${activeTab}`);
+    });
+
+    if (activeTab === 'map') {
+      setTimeout(() => {
+        map.invalidateSize();
+      }, 0);
+    }
+  });
+});
 
 titleEl.textContent = `${events.length} Scientists* Now Dead/Missing`;
 
@@ -791,11 +1161,11 @@ function getMarkerColor(dateString) {
   const now = new Date();
   const diffDays = (now - date) / (1000 * 60 * 60 * 24);
 
-  const yellow = '#ffd23f'; // 2023 and before
-  const orange24 = '#ff9f1c'; // 2024
-  const orange25 = '#ff6f51'; // 2025
-  const red26 = '#ff3b30'; // 2026
-  const deepRedRecent = '#c81d25'; // past 7 days in 2026
+  const yellow = '#ffd23f';
+  const orange24 = '#ff9f1c';
+  const orange25 = '#ff6f51';
+  const red26 = '#ff3b30';
+  const deepRedRecent = '#c81d25';
 
   if (year >= 2026) {
     if (diffDays <= 7) {
@@ -850,6 +1220,45 @@ function openDetailCard(event) {
   });
 }
 
+function openAgencyCard(node) {
+  const existingCard = document.querySelector('.detail-card');
+  if (existingCard) {
+    existingCard.remove();
+  }
+
+  const card = document.createElement('div');
+  card.className = 'detail-card';
+
+  card.innerHTML = `
+    <button class="close-card" type="button">×</button>
+    <p class="detail-date">${node.type ? node.type.toUpperCase() : 'AGENCY'}</p>
+    <h3>${node.label}</h3>
+    <p class="detail-role">${node.group || 'Network node'}</p>
+    <p class="detail-location">${node.description || 'No description available yet.'}</p>
+  `;
+
+  document.body.appendChild(card);
+
+  card.querySelector('.close-card').addEventListener('click', () => {
+    card.remove();
+  });
+}
+
+function focusEvent(event) {
+  if (activeTab === 'map') {
+    const marker = markers[event.id];
+    if (marker) {
+      map.panTo(event.coords);
+      marker.openPopup();
+    }
+    openDetailCard(event);
+  } else if (activeTab === 'agencies') {
+    openDetailCard(event);
+  } else {
+    openDetailCard(event);
+  }
+}
+
 function renderSidebar(eventList) {
   sidebarList.innerHTML = '';
 
@@ -857,16 +1266,15 @@ function renderSidebar(eventList) {
     const item = document.createElement('article');
     item.className = 'incident-card';
     item.innerHTML = `
-  <h3><button class="incident-link" type="button">${event.name}</button></h3>
-  <p class="role">${event.role}</p>
-  <p class="incident-date">${event.status} · ${event.date}</p>
-  <p class="location">${event.location}</p>
-`;
+      <h3><button class="incident-link" type="button">${event.name}</button></h3>
+      <p class="role">${event.role}</p>
+      <p class="incident-date">${event.status} · ${event.date}</p>
+      <p class="location">${event.location}</p>
+    `;
 
     item.querySelector('.incident-link').addEventListener('click', () => {
-  markers[event.id].openPopup();
-  openDetailCard(event);
-});
+      focusEvent(event);
+    });
 
     sidebarList.appendChild(item);
   });

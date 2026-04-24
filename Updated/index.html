@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scientist Incident Tracker</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Global tracking project</p>
+        <h1 id="main-title">Scientist Incident Tracker</h1>
+        <p class="subhead">Tracking recent deaths and disappearances of people connected to sensitive research and government programs.</p>
+      </div>
+
+
+    </header>
+
+    <main class="content">
+  <div class="left-panel">
+    <div class="tabs">
+  <button class="tab-button active" data-tab="map">Map</button>
+  <button class="tab-button" data-tab="agencies">Agencies</button>
+</div>
+
+<section id="tab-map" class="tab-panel active">
+  <div id="map"></div>
+</section>
+
+<section id="tab-agencies" class="tab-panel">
+  <div id="agencies-panel">
+    <div id="agency-viewport">
+  <div id="agency-canvas">
+    <div id="agency-network">
+      <svg id="agency-lines"></svg>
+      <div id="agency-node-layer"></div>
+    </div>
+  </div>
+
+  <div id="agency-popover" class="agency-popover is-hidden">
+    <button id="agency-popover-close" type="button" aria-label="Close">×</button>
+    <h3 id="agency-info-title">Select a node</h3>
+    <p id="agency-info-text">Click an agency image to view details.</p>
+  </div>
+</div>
+</section>
+  </div>
+
+     <aside class="sidebar">
+  <div class="sidebar-top">
+    <div class="sidebar-heading-row">
+      <h2>Incident Reports</h2>
+
+      <div class="sort-wrap">
+        <select id="sort-select">
+          <option value="first-name">First name</option>
+          <option value="last-name">Last name</option>
+          <option value="latest">Latest</option>
+          <option value="earliest">Earliest</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-list"></div>
+</aside>
+    </main>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
