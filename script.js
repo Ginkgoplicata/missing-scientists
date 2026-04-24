@@ -78,7 +78,7 @@ const events = [
 {
   id: "james-tony-moffatt",
   name: "James \"Tony\" Moffatt",
-  role: "Aerospace Defense Engineer & Former NASA Payload Specialist",
+  role: "Aerospace Defense Engineer & Former Nasa Payload Specialist",
   coords: [34.7304, -86.5861],
   location: "Huntsville, Alabama, USA",
   date: "2026-04-17",
